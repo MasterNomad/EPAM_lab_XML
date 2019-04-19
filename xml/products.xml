@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="products.xsd">
+    <category id= "1" title="Компьютеры и периферия">
+        <subcategory id = "1" title = "Системные блоки">
+            <product>
+                <brand>DELL</brand>
+                <model>SF347</model>
+                <dateOfManufacture>2019-02-19</dateOfManufacture>
+                <color>BLACK</color>
+                <price>27499</price>
+                <quantity>4</quantity>
+            </product>
+
+            <product>
+                <brand>HP</brand>
+                <model>UR004</model>
+                <dateOfManufacture>2019-03-11</dateOfManufacture>
+                <color>black</color>
+                <price>18 999</price>
+                <quantity>3</quantity>
+            </product>
+
+            <product>
+                <brand>DELL</brand>
+                <model>MI306</model>
+                <dateOfManufacture>2019-03-01</dateOfManufacture>
+                <color>black</color>
+                <price>47 499</price>
+                <quantity>1</quantity>
+            </product>
+        </subcategory>
+
+        <subcategory id = "2" title = "Мониторы">
+
+        </subcategory>
+
+        <subcategory id = "3" title = "Клавиатуры">
+
+        </subcategory>
+    </category>
+
+    <category id= "2" title="Сетевое оборудование">
+        <subcategory id = "1" title = "Маршрутизаторы">
+
+        </subcategory>
+        <subcategory id = "2" title = "Wi-Fi оборудование">
+
+        </subcategory>
+    </category>
+</products>
