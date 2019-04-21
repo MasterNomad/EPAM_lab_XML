@@ -5,14 +5,12 @@ import java.util.List;
 
 @XmlRootElement(name = "category")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Category {
-
-    @XmlAttribute(name = "id")
-    private long id;
+public class SubCategory {
 
     @XmlAttribute(name = "title")
     private String title;
 
-    @XmlElement(name = "subcategory")
-    private List<SubCategory> subCategories;
+    @XmlElement(name = "product")
+    private List<Product> products;
+
 }
