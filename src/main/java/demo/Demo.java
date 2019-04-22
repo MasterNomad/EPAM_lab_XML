@@ -3,7 +3,7 @@ package demo;
 import com.google.gson.Gson;
 import org.xml.sax.SAXException;
 import xml.JavaBinder;
-import xml.StaxStreamProcessor;
+import xml.SaxStreamProcessor;
 import xml.Validator;
 
 import javax.xml.bind.JAXBException;
@@ -17,7 +17,7 @@ public class Demo {
             throws XMLStreamException, JAXBException, IOException, SAXException {
         StreamSource streamSource = new StreamSource(xmlPath);
         new Validator().validate(streamSource, xsdPath);
-        try (StaxStreamProcessor processor = new StaxStreamProcessor(streamSource)) {
+        try (SaxStreamProcessor processor = new SaxStreamProcessor(streamSource)) {
             JavaBinder javaBinder = new JavaBinder();
             while (processor.hasElements(xmlElement)) {
                 System.out.println(new Gson().toJson(javaBinder.getObject(processor.getReader(), elementClass)));

@@ -3,8 +3,6 @@ package dto;
 import javax.xml.bind.annotation.*;
 import java.util.List;
 
-@XmlRootElement(name = "category")
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Category {
 
     @XmlAttribute(name = "id")

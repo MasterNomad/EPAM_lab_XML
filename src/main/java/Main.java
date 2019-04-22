@@ -1,4 +1,5 @@
 import demo.Demo;
+import dto.Category;
 import dto.Product;
 import org.xml.sax.SAXException;
 
@@ -13,8 +14,8 @@ public class Main {
             new Demo().printJsonsByPathAndXmlElementNameAndElementClass(
                     "data/products.xml",
                     "data/products.xsd",
-                    "product",
-                    Product.class);
+                    "category",
+                    Category.class);
         } catch (XMLStreamException | JAXBException | IOException e) {
             e.printStackTrace();
         } catch (SAXException e) {

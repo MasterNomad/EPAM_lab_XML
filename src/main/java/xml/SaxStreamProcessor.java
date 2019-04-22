@@ -6,12 +6,12 @@ import javax.xml.stream.XMLStreamReader;
 import javax.xml.stream.events.XMLEvent;
 import javax.xml.transform.stream.StreamSource;
 
-public class StaxStreamProcessor implements AutoCloseable {
+public class SaxStreamProcessor implements AutoCloseable {
 
     private static final XMLInputFactory FACTORY = XMLInputFactory.newInstance();
     private final XMLStreamReader reader;
 
-    public StaxStreamProcessor(StreamSource sourceStream) throws XMLStreamException {
+    public SaxStreamProcessor(StreamSource sourceStream) throws XMLStreamException {
         reader = FACTORY.createXMLStreamReader(sourceStream);
     }
 
