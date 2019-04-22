@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<products>
+    <category id ="1" title = "Компьютеры и периферия">
+        <subcategory title = "Системные блоки">
+            <product>
+                <brand>DELL</brand>
+                <model>SF347</model>
+                <dateOfManufacture>2019-04-21</dateOfManufacture>
+                <color>BLACK</color>
+                <price>25799</price>
+                <quantity>4</quantity>
+            </product>
+            <product>
+                <brand>HP</brand>
+                <model>ur460</model>
+                <dateOfManufacture>2019-02-21</dateOfManufacture>
+                <color>BLACK</color>
+                <price>17 999</price>
+                <quantity>2</quantity>
+            </product>
+        </subcategory>
+        <subcategory title = "Мониторы">
+            <product>
+                <brand>ASUS</brand>
+                <model>VS197</model>
+                <dateOfManufacture>2019-04-01</dateOfManufacture>
+                <color>BLACK</color>
+                <price>4499</price>
+                <quantity>1</quantity>
+            </product>
+            <product>
+                <brand>ACER</brand>
+                <model>ET241</model>
+                <dateOfManufacture>2019-02-21</dateOfManufacture>
+                <color>BLACK</color>
+                <price>7 850</price>
+                <quantity>8</quantity>
+            </product>
+        </subcategory>
+    </category>
+       <category id ="2" title = "Сетевое оборудование">
+        <subcategory title = "Маршрутизаторы ">
+            <product>
+                <brand>ASUS</brand>
+                <model>rt120</model>
+                <dateOfManufacture>2018-04-21</dateOfManufacture>
+                <color>BLACK</color>
+                <price>3 099</price>
+                <quantity>20</quantity>
+            </product>
+            <product>
+                <brand>DLINK</brand>
+                <model>LA640</model>
+                <dateOfManufacture>2019-01-15</dateOfManufacture>
+                <color>WHITE</color>
+                <price>4 199</price>
+                <quantity>9</quantity>
+            </product>
+        </subcategory>
+        <subcategory title = "Wi-Fi оборудование">
+            <product>
+                <brand>DLINK</brand>
+                <model>DW548</model>
+                <dateOfManufacture>2017-03-18</dateOfManufacture>
+                <color>BLACK</color>
+                <price>950</price>
+                <quantity>19</quantity>
+            </product>
+        </subcategory>
+    </category>
+</products>
