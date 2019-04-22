@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<products>
+<products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="products.xsd">
     <category id ="1" title = "Компьютеры и периферия">
         <subcategory title = "Системные блоки">
             <product>
@@ -16,7 +17,7 @@
                 <model>ur460</model>
                 <dateOfManufacture>2019-02-21</dateOfManufacture>
                 <color>BLACK</color>
-                <price>17 999</price>
+                <price>17999</price>
                 <quantity>2</quantity>
             </product>
         </subcategory>
@@ -34,7 +35,7 @@
                 <model>ET241</model>
                 <dateOfManufacture>2019-02-21</dateOfManufacture>
                 <color>BLACK</color>
-                <price>7 850</price>
+                <price>7850</price>
                 <quantity>8</quantity>
             </product>
         </subcategory>
@@ -46,7 +47,7 @@
                 <model>rt120</model>
                 <dateOfManufacture>2018-04-21</dateOfManufacture>
                 <color>BLACK</color>
-                <price>3 099</price>
+                <price>3099</price>
                 <quantity>20</quantity>
             </product>
             <product>
@@ -54,7 +55,7 @@
                 <model>LA640</model>
                 <dateOfManufacture>2019-01-15</dateOfManufacture>
                 <color>WHITE</color>
-                <price>4 199</price>
+                <price>4199</price>
                 <quantity>9</quantity>
             </product>
         </subcategory>
