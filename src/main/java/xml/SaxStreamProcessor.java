@@ -19,7 +19,7 @@ public class SaxStreamProcessor implements AutoCloseable {
         return reader;
     }
 
-    public boolean hasElements(String element) throws XMLStreamException {
+    public boolean nextElementByName(String element) throws XMLStreamException {
         while (reader.hasNext()) {
             if (reader.next() == XMLEvent.START_ELEMENT &&
                     element.equals(reader.getLocalName())) {

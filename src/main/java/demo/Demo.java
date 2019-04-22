@@ -13,13 +13,16 @@ import java.io.IOException;
 
 public class Demo {
 
-    public <T> void printJsonsByPathAndXmlElementNameAndElementClass(String xmlPath, String xsdPath, String xmlElement, Class<T> elementClass)
+    public <T> void printJsonsByPathAndXmlElementNameAndElementClass(String xmlPath,
+                                                                     String xsdPath,
+                                                                     String xmlElement,
+                                                                     Class<T> elementClass)
             throws XMLStreamException, JAXBException, IOException, SAXException {
         StreamSource streamSource = new StreamSource(xmlPath);
         new Validator().validate(streamSource, xsdPath);
         try (SaxStreamProcessor processor = new SaxStreamProcessor(streamSource)) {
             JavaBinder javaBinder = new JavaBinder();
-            while (processor.hasElements(xmlElement)) {
+            while (processor.nextElementByName(xmlElement)) {
                 System.out.println(new Gson().toJson(javaBinder.getObject(processor.getReader(), elementClass)));
             }
         }
